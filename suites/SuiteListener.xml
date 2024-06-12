@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Test" verbose="1">
+
+    <test name="Regression on CHROME">
+        <classes>
+            <class name="anhtester.com.testcases.UploadFileCMS">
+                <methods>
+                    <include name="testUploadFileWithSendKeys"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
