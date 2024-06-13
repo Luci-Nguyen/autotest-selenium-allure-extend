@@ -1,5 +1,6 @@
 package com.LearnParallel;
 
+import com.constants.ConstantGlobal;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,7 +25,7 @@ public class ChromeTest {
     public void ChromeTestMethod1() {
         //Initialize the chrome driver
         System.out.println("The thread ID for Chrome is " + Thread.currentThread().getId());
-        driver.get("https://anhtester.com");
+        driver.get(ConstantGlobal.URL);
         driver.findElement(By.xpath("//h3[normalize-space()='Website Testing']")).click();
     }
 
@@ -32,7 +33,7 @@ public class ChromeTest {
     public void ChromeTestMethod2() {
         //Initialize the chrome driver
         System.out.println("The thread ID for Chrome is " + Thread.currentThread().getId());
-        driver.get("https://anhtester.com");
+        driver.get(ConstantGlobal.URL);
         driver.findElement(By.xpath("//h3[normalize-space()='Website Testing']")).click();
     }
 

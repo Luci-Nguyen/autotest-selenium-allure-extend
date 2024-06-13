@@ -1,5 +1,6 @@
 package com.LearnParallel;
 
+import com.constants.ConstantGlobal;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -24,7 +25,7 @@ public class EdgeTest {
     public void EdgeTestMethod1() {
         //Initialize the Edge driver
         System.out.println("The thread ID for Edge is " + Thread.currentThread().getId());
-        driver.get("https://anhtester.com");
+        driver.get(ConstantGlobal.URL);
         driver.findElement(By.xpath("//h3[normalize-space()='API Testing']")).click();
     }
 
@@ -32,7 +33,7 @@ public class EdgeTest {
     public void EdgeTestMethod2() {
         //Initialize the Edge driver
         System.out.println("The thread ID for Edge is " + Thread.currentThread().getId());
-        driver.get("https://anhtester.com");
+        driver.get(ConstantGlobal.URL);
         driver.findElement(By.xpath("//h3[normalize-space()='API Testing']")).click();
     }
 

@@ -6,7 +6,7 @@ public class ConstantGlobal {
     static {
         PropertiesHelpers.loadAllFiles();
     }
-
+    public final static String VERIFY_LOGIN = "Welcome hoan";
     public final static String BROWSER = PropertiesHelpers.getValue("BROWSER");
     public final static boolean HEADLESS = Boolean.parseBoolean(PropertiesHelpers.getValue("HEADLESS"));
     public final static String URL = PropertiesHelpers.getValue("URL");
