@@ -1,5 +1,6 @@
 package com.LearnParallel;
 
+import com.constants.ConstantGlobal;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,7 +17,7 @@ public class ParallelTest {
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.get("https://anhtester.com");
+        driver.get(ConstantGlobal.URL);
         Thread.sleep(2000);
         driver.findElement(By.xpath("//h3[normalize-space()='Website Testing']")).click();
         driver.quit();
@@ -27,7 +28,7 @@ public class ParallelTest {
         WebDriver driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.get("https://anhtester.com");
+        driver.get(ConstantGlobal.URL);
         Thread.sleep(2000);
         driver.findElement(By.xpath("//h3[normalize-space()='Website Testing']")).click();
         driver.quit();
@@ -38,7 +39,7 @@ public class ParallelTest {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.get("https://anhtester.com");
+        driver.get(ConstantGlobal.URL);
         Thread.sleep(2000);
         driver.findElement(By.xpath("//h3[normalize-space()='API Testing']")).click();
         driver.quit();

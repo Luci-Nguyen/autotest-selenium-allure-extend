@@ -54,6 +54,10 @@ public class WebUI {
     public static List<WebElement> getWebElements(By by) {
         return DriverManager.getDriver().findElements(by);
     }
+    public static String getText(By by) {
+        waitForElementVisible(by);
+        return getWebElement(by).getText();
+    }
 
     @Step("Verify Equals: {0} and {1}")
     public static void verifyEquals(Object actual, Object expected) {
