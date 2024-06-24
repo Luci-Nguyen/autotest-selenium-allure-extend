@@ -17,6 +17,7 @@ public class ExtentReportManager {
         extentReports.setSystemInfo("Framework Name", "Selenium Java Course 04/2022 | Hoan Tester");
         extentReports.setSystemInfo("Author", ConstantGlobal.AUTHOR);
         return extentReports;
+
     }
 
 }
