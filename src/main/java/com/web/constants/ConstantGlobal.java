@@ -1,6 +1,6 @@
-package com.constants;
+package com.web.constants;
 
-import com.helpers.PropertiesHelpers;
+import com.web.helpers.PropertiesHelpers;
 
 public class ConstantGlobal {
     static {

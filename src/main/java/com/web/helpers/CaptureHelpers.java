@@ -1,7 +1,7 @@
-package com.helpers;
+package com.web.helpers;
 
-import com.constants.ConstantGlobal;
-import com.driver.DriverManager;
+import com.web.constants.ConstantGlobal;
+import com.web.driver.DriverManager;
 import org.monte.media.Format;
 import org.monte.media.FormatKeys.MediaType;
 import org.monte.media.Registry;

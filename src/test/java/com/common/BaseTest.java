@@ -1,7 +1,7 @@
 package com.common;
 
-import com.constants.ConstantGlobal;
-import com.driver.DriverManager;
+import com.web.constants.ConstantGlobal;
+import com.web.driver.DriverManager;
 import com.listeners.TestListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

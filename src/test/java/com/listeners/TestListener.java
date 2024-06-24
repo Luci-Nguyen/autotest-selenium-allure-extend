@@ -1,12 +1,12 @@
 package com.listeners;
 
-import com.constants.ConstantGlobal;
-import com.helpers.CaptureHelpers;
-import com.helpers.PropertiesHelpers;
-import com.reports.AllureManager;
-import com.reports.ExtentReportManager;
-import com.reports.ExtentTestManager;
-import com.utils.LogUtils;
+import com.web.constants.ConstantGlobal;
+import com.web.helpers.CaptureHelpers;
+import com.web.helpers.PropertiesHelpers;
+import com.web.reports.AllureManager;
+import com.web.reports.ExtentReportManager;
+import com.web.reports.ExtentTestManager;
+import com.web.utils.LogUtils;
 import com.aventstack.extentreports.Status;
 import org.testng.ITestContext;
 import org.testng.ITestListener;

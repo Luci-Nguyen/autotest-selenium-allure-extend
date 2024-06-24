@@ -1,4 +1,4 @@
-package com.helpers;
+package com.web.helpers;
 
 import java.io.File;
 import java.text.Normalizer;

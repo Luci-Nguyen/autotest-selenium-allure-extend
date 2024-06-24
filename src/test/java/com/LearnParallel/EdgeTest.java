@@ -1,6 +1,6 @@
 package com.LearnParallel;
 
-import com.constants.ConstantGlobal;
+import com.web.constants.ConstantGlobal;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;

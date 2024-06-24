@@ -1,13 +1,13 @@
-package com.keywords;
+package com.web.keywords;
 
-import com.constants.ConstantGlobal;
-import com.driver.DriverManager;
-import com.helpers.CaptureHelpers;
-import com.helpers.SystemHelpers;
-import com.helpers.PropertiesHelpers;
-import com.reports.AllureManager;
-import com.reports.ExtentTestManager;
-import com.utils.LogUtils;
+import com.web.constants.ConstantGlobal;
+import com.web.driver.DriverManager;
+import com.web.helpers.CaptureHelpers;
+import com.web.helpers.SystemHelpers;
+import com.web.helpers.PropertiesHelpers;
+import com.web.reports.AllureManager;
+import com.web.reports.ExtentTestManager;
+import com.web.utils.LogUtils;
 import com.aventstack.extentreports.Status;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;

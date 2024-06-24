@@ -1,7 +1,6 @@
-package com.reports;
+package com.web.reports;
 
-import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.constants.ConstantGlobal;
+import com.web.constants.ConstantGlobal;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 

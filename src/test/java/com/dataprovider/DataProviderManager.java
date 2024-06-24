@@ -1,7 +1,7 @@
 package com.dataprovider;
 
-import com.helpers.ExcelHelpers;
-import com.helpers.SystemHelpers;
+import com.web.helpers.ExcelHelpers;
+import com.web.helpers.SystemHelpers;
 import org.testng.annotations.DataProvider;
 
 public class DataProviderManager {

@@ -1,8 +1,7 @@
 package com.testcases;
 
 import com.common.BaseTest;
-import com.constants.ConstantGlobal;
-import com.dataprovider.DataProviderManager;
+import com.web.constants.ConstantGlobal;
 import com.pages.LoginPageDemo;
 import io.qameta.allure.*;
 import org.json.simple.parser.ParseException;
@@ -10,7 +9,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.util.Hashtable;
 
 import static io.qameta.allure.SeverityLevel.BLOCKER;
 import static org.testng.Assert.assertEquals;

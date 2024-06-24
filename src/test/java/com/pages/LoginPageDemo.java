@@ -1,15 +1,15 @@
 package com.pages;
 
-import com.constants.ConstantGlobal;
+import com.web.constants.ConstantGlobal;
 import com.dataprovider.ReadJsonFile;
-import com.keywords.WebUI;
+import com.web.keywords.WebUI;
 import io.qameta.allure.Step;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 
 import java.io.IOException;
 
-import static com.keywords.WebUI.getText;
+import static com.web.keywords.WebUI.getText;
 
 public class LoginPageDemo {
     public LoginPageDemo() {
