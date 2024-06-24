@@ -12,6 +12,10 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+
 public class TestListener implements ITestListener {
 
     public String getTestName(ITestResult result) {
@@ -39,6 +43,15 @@ public class TestListener implements ITestListener {
             CaptureHelpers.stopRecord();
         }
         ExtentReportManager.getExtentReports().flush(); //Kết thúc và thực thi xuất report ra file
+
+        File htmlFile = new File("target/reports/ExtentReport.html");
+        if (Desktop.isDesktopSupported()) {
+            try {
+                Desktop.getDesktop().browse(htmlFile.toURI());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override

@@ -1,12 +1,17 @@
 ## ♻️ Selenium Maven Parallel Execution 04/2022
-Selenium Maven project từ bài 25 parallel về sau của khoá học Selenium Java 4/2022 Anh Tester
 
-Source code từ bài 1-24 : https://github.com/anhtester/SeleniumMaven42022
+build: mvn compile
+run: mvn test 
+allure report: allure serve target/allure-results 
+
 
 ***🔥 Lưu ý: nhớ cập nhật thư viện trong pom.xml phiên bản mới nhất***
 
-🔅 Khoá học Selenium WebDriver with Java Basic to Advanced | Anh Tester
+🔅 Có thể config 2 report là extend or allure , extend report sẽ bị security nên cần chạy lệnh bên dưới
 
-https://anhtester.com/course/selenium-webdriver-with-java-basic-to-advanced-c4.html
+Manage Jenkins->
+Manage Nodes->
+Click settings(gear icon)->
+click Script console on left and type in the following command:
 
-![alt text](https://anhtester.com/uploads/logo/logo_anh_tester_github_v3.jpg)
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
