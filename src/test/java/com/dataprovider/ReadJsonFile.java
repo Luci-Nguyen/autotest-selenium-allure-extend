@@ -6,14 +6,8 @@ import org.json.simple.parser.ParseException;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
-import static java.time.LocalTime.now;
 
 public class ReadJsonFile {
     public static Map<String, String> getJsonData(String s) throws IOException, ParseException {
@@ -31,8 +25,7 @@ public class ReadJsonFile {
     }
 
     public static void main(String[] args) throws IOException, ParseException {
-        LocalDateTime s = LocalDateTime.now();
-        System.out.println(s.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+        System.out.println("username: " + getJsonData("users").get("username") + "\n" + "password: " + getJsonData("users").get("password"));
     }
 
 }
