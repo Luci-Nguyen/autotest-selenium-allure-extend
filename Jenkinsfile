@@ -27,8 +27,14 @@ pipeline {
                 allure([
                     includeProperties: false,
                     jdk: '',
+                    [allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
                     properties: [],
                     reportBuildPolicy: 'ALWAYS',
+                    reportName: 'Extent Report',
+                    reportDir: 'target/reports',
+                    reportFiles: 'ExtentReport.html',
                     results: [[path: 'target/allure-results']]
                 ])
             }
