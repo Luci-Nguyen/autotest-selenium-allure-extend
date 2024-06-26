@@ -15,3 +15,20 @@ Click settings(gear icon)->
 click Script console on left and type in the following command:
 
 System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
+
+
+
+## ♻️ Sử dụng webhook
+Go to your repository's settings.
+Select "Webhooks" and add a new webhook.
+Enter your Jenkins URL followed by /github-webhook/ (e.g., http://your-jenkins-url/github-webhook/).
+Set the content type to application/json.
+Select the events you want to trigger the webhook (usually "Push" and "Pull request").
+
+## ♻️ Create Jenkinsfile
+Tạo 1 file có tên Jenkinsfile trong đường dẫn project
+Cấu hình các thông tin
+Trên Jenkins Tạo 1 item pipeline
+Chọn ![img.png](img.png)
+Chọn tếp ![img_1.png](img_1.png) và Save
+Script path là Jenkinsfile
