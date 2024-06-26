@@ -17,20 +17,17 @@ pipeline {
                 bat script: 'mvn test -Dbrowser=localchrome'
             }
         }
-        stage('Generate Allure Report') {
+        stage('Publish Report') {
             steps {
-                 bat script: 'mvn allure:report'
-            }
-        }
-        stage('Publish Allure Report') {
-            steps {
-                allure([
-                    includeProperties: false,
-                    jdk: '',
-                    properties: [],
-                    reportBuildPolicy: 'ALWAYS',
-                    results: [[path: 'target/allure-results']]
-                ])
+              publishHTML([
+              allowMissing: false,
+              alwaysLinkToLastBuild: true,
+              keepAll: true, reportDir: '',
+              reportFiles: 'target/reports/ExtentReport.html',
+              reportName: 'Extent Report',
+              reportTitles: '',
+              useWrapperFileDirectly: true
+              ])
             }
         }
     }
