@@ -31,4 +31,5 @@ Cấu hình các thông tin
 Trên Jenkins Tạo 1 item pipeline
 Chọn ![img.png](img.png)
 Chọn tếp ![img_1.png](img_1.png) và Save
-Script path là Jenkinsfile
+Script path là Jenkinsfile và JenkinsfileExtendReport
+Sử dụng ngrok http 8080 để public jenkins lên internet
