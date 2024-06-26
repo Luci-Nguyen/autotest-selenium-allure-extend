@@ -27,7 +27,7 @@ pipeline {
                 allure([
                     includeProperties: false,
                     jdk: '',
-                    [allowMissing: false,
+                    allowMissing: false,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
                     properties: [],
